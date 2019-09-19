@@ -17,15 +17,19 @@ Read this document to see how it can be done in three easy steps!
 For this example, we will be using https://api.nasa.gov/api.html#donkiFLR, which is NASA’s API for accessing data on solar flares. This website is very good for getting data, the solar flare API is just one of many available, and the process is nearly identical for each.
 
 Look at the example given for the solar flare API on the website (or the example given for whichever API you are using):
+
 https://api.nasa.gov/DONKI/FLR?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=DEMO_KEY
+
 Replace the first yyyy-MM-dd in the URL with the first date you’d like to get data from, and the second yyyy-MM-dd with the last date you’d like to get data from.
 
 Then replace DEMO_KEY at the end of the URL with your API key. You can get a NASA API key almost instantaneously by filling out this form: https://api.nasa.gov/index.html#apply-for-an-api-key
 It’s free, they’ll email it to you, mine came only a few seconds after I filled out the form.
 
 Here is an example key that gets solar flare data between May 26, 2015 and November 11, 2018:
+
 https://api.nasa.gov/DONKI/FLR?startDate=2015-05-26&endDate=2018-11-11&api_key=Hj3AgfMw4ahroXDJCOKY5BBVJbYBS6a3aKpG755c
-Notice how the dates have replaced yyyy-MM-dd in the first example, and how DEMO_KEY has been replaced by an actual key at the end after api_key=
+
+Notice how the dates have replaced yyyy-MM-dd in the first example, and how DEMO_KEY has been replaced by an actual key at the end after *api_key=*
 
 Once you have assembled your URL, paste it into your web browser and go to it. It should give you a lot of text representing whatever data you’re getting. This text (at least coming from NASA) will be in the form of JSON (JavaScript Object Notation), with which we can use to make our own classes.
 
