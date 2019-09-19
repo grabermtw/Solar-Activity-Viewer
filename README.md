@@ -23,6 +23,7 @@ https://api.nasa.gov/DONKI/FLR?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=D
 Replace the first yyyy-MM-dd in the URL with the first date you’d like to get data from, and the second yyyy-MM-dd with the last date you’d like to get data from.
 
 Then replace DEMO_KEY at the end of the URL with your API key. You can get a NASA API key almost instantaneously by filling out this form: https://api.nasa.gov/index.html#apply-for-an-api-key
+
 It’s free, they’ll email it to you, mine came only a few seconds after I filled out the form.
 
 Here is an example key that gets solar flare data between May 26, 2015 and November 11, 2018:
@@ -266,7 +267,7 @@ Debug.Log(solarFlareArray[i].flrID);
 }
 ```
 
-Basically, in another script, just use solarFlareArray[index].flrID (or .instruments or .beginTime or whatever you’d like) to access the fields of the solar flare at that index of the array, assuming you made them all public, and then do what you’d like with that data.
+Basically, in another script, just use *solarFlareArray[index].flrID* (or .instruments or .beginTime or whatever you’d like) to access the fields of the solar flare at that index of the array, assuming you made them all public, and then do what you’d like with that data.
 
 Now you can build your project and deploy it to HoloLens!
 
@@ -278,10 +279,7 @@ Once your project has been successfully built to HoloLens, you can upload your .
 First connect to the HoloLens’s Device Portal by typing its IP address into your web browser (make sure the HoloLens is on first though).
 It will probably say the webpage is not secure and discourage you from continuing. Ignore this, just click “Continue to webpage”.
 
-You will be prompted to enter a username and password. For all the HoloLenses this should be as follows:
-Username: xrclub
-Password: xrclub1029!
-If that doesn’t work, try arclub and arclub1029! as the username and password, respectively.
+You will be prompted to enter a username and password. We used the XR Club credentials.
 
 The device portal should then show up. Navigate to “File Explorer,” and then navigate to AppData\Local\Packages\<YourProject’sName>\LocalState (remember, this is the path that is given by Application.persistentDataPath).
 
