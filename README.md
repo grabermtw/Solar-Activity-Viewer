@@ -1,5 +1,5 @@
 # Solar Activity Viewer
-An application visualizing the locations of the origin points of coronal mass ejections on the Sun. This was created for University of Maryland's Time Domain Astronomy Hackathon that took place in November 2018.
+An application visualizing the locations of the origin points of coronal mass ejections and solar flares on the Sun in 3D for the Microsoft HoloLens. This was created for University of Maryland's Time Domain Astronomy Hackathon that took place in November 2018.
 
 *The following explanation was written for CMSC389U: Intro to AR App Development with Microsoft HoloLens, and was taught the week following the creation of Solar Activity Viewer at the hackathon*
 
